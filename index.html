@@ -1,0 +1,75 @@
+<html lang="pl">
+  <head>  
+  <title>Przechyłka</title>
+  <meta charset="UTF-8"> 
+  <!-- date: 23.10.2017 --> 
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script> 
+  </head>
+  
+  <body>
+		<form>
+        <img src="logo.png">
+  		<table>
+            <tr>
+              <td colspan="2"><a href="http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU20160000124/O/D20160124.pdf#page=12" target="_blank">§21.2. </a>Łuk kołowy powinien być zaprojektowany i wykonany w taki sposób,
+              aby bezpieczeństwo było zachowane przy ruchu po mokrej nawierzchni z prędkością miarodajną
+              – w wypadku drogi klasy G i dróg wyższych klas lub z prędkością projektową – na drodze klasy Z, L lub D.</td>
+            </tr>
+            <tr>
+  		    <td>Klasa drogi</td>
+  		    <td>
+    		    <select name="klasaDrogi" id="klasaDrogi">
+        		  <option value="A">A</option>
+        		  <option value="S">S</option>
+        		  <option value="GP">GP</option>
+        		  <option value="G">G</option>
+        		  <option value="Z">Z</option>
+        		  <option value="L">L</option>			  
+        		  <option value="D">D</option>
+      		  </select>
+  		      </td>
+  		  </tr>
+  		  <tr>
+  		    <td>Prędkość</td>
+  		    <td>
+    		    <select name="predkoscMiarodajna" id="predkoscMiarodajna">
+        		  <option value=130>130</option>
+        		  <option value=120>120</option>
+        		  <option value=110>110</option>
+        		  <option value=100>100</option>
+        		  <option value=90>90</option>
+        		  <option value=80>80</option>			  
+        		  <option value=70>70</option>
+        		  <option value=60>60</option>
+        		  <option value=50>50</option>			  
+        		  <option value=40>40</option>
+      		  </select>
+  		    </td>
+  		  </tr>
+  		  <tr>
+  		    <td>
+  		      Promień łuku
+  		    </td>
+  		    <td>
+  		      <input type="number" name="promien" min="30" step="1" max="9999" id="promien">
+  		    </td>
+  		  </tr>
+  		  <tr>
+  		    <td>Jezdnia ograniczona krawężnikami</td>
+            <td><input type="checkbox" name="kraweznik" value="true" id="czyKraweznik"></td>
+  		  </tr>
+  		  <tr>
+  		    <td>
+  		      <button type="button" onclick="jakaPrzechylka()">Sprawdź przechyłkę</button>
+  		    </td>
+  		    <td>
+            <span id="wynik"></span>
+  		    </td>
+  		  </tr>
+  		</table>
+		</form>
+        <p>&copy; Paweł Lorencowicz 2017</p>
+  </body>
+  
+</html>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&subset=latin-ext');
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+  background: AntiqueWhite;
+}
+
+img {
+    margin: 40px 0 0 40px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 40px;
+}
+
+td {
+  font-size: 14px;
+  width: 275px;
+  vertical-align: middle;
+  padding: 10px 0;
+}
+
+select, #promien {
+    font-size: 14px;
+    padding: 3px 6px;
+    width: 80px;
+}
+
+button {
+    font-size: 14px;
+    padding: 3px 6px;
+    width: 200px;
+}
+
+p {
+    font-size: 9px; 
+    margin: 40px; 
+}
